@@ -51,7 +51,7 @@ export const colors = {
   darkerBlue200: '#8D9AB6',
   darkerBlue300: '#63749A',
   darkerBlue400: '#425987',
-  darkerBlue500: '#425987',
+  darkerBlue500: '#1E3F75',
   darkerBlue600: '#18386E',
   darkerBlue700: '#0E3063',
   darkerBlue800: '#062757',
