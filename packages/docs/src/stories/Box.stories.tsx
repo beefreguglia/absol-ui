@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxContent, BoxProps, Text } from '@sapron-ui/react';
+import { Box, BoxContent, BoxProps, Text } from '@churrasco-ui/react';
 
 export default {
   title: 'Surfaces/Box/Box',

@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, Button, ButtonProps } from '@sapron-ui/react';
+import { Box, Button, ButtonProps } from '@churrasco-ui/react';
 
 export default {
   title: 'Form/Button',

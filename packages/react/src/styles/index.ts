@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@sapron-ui/tokens';
+} from '@churrasco-ui/tokens';
 import { createStitches, defaultThemeMap } from '@stitches/react';
 
 export const {

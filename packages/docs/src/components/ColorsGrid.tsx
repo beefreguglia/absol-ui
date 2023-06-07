@@ -1,4 +1,4 @@
-import { colors } from '@sapron-ui/tokens';
+import { colors } from '@churrasco-ui/tokens';
 import { getContrast } from 'polished';
 
 export function ColorsGrid() {

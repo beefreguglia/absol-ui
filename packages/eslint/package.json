@@ -1,5 +1,5 @@
 {
-  "name": "@sapron-ui/eslint-config",
+  "name": "@churrasco-ui/eslint-config",
   "license": "MIT",
   "private": true,
   "main": "index.js",

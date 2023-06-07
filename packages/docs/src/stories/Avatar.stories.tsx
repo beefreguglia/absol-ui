@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Avatar, AvatarProps, Box } from '@sapron-ui/react';
+import { Avatar, AvatarProps, Box } from '@churrasco-ui/react';
 
 export default {
   title: 'Data Display/Avatar',

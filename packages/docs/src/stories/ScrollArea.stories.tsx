@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, ScrollArea, ScrollAreaProps, Text } from '@sapron-ui/react';
+import { Box, ScrollArea, ScrollAreaProps, Text } from '@churrasco-ui/react';
 
 export default {
   title: 'Navigation/ScrollArea',

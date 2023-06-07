@@ -1,5 +1,5 @@
 {
-  "name": "@sapron-ui/react",
+  "name": "@churrasco-ui/react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@sapron-ui/eslint-config": "*",
-    "@sapron-ui/tokens": "*",
-    "@sapron-ui/ts-config": "*",
+    "@churrasco-ui/eslint-config": "*",
+    "@churrasco-ui/tokens": "*",
+    "@churrasco-ui/ts-config": "*",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "react": "^18.2.0",

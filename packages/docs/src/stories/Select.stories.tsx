@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, Select, SelectOption, SelectProps } from '@sapron-ui/react';
+import { Box, Select, SelectOption, SelectProps } from '@churrasco-ui/react';
 
 export default {
   title: 'Form/Select/Select',

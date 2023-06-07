@@ -1,5 +1,5 @@
 {
-  "name": "@sapron-ui/tokens",
+  "name": "@churrasco-ui/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@sapron-ui/ts-config": "*",
-    "@sapron-ui/eslint-config": "*",
+    "@churrasco-ui/ts-config": "*",
+    "@churrasco-ui/eslint-config": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   }

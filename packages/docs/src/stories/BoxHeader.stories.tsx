@@ -6,7 +6,7 @@ import {
   BoxHeader,
   BoxHeaderProps,
   Text,
-} from '@sapron-ui/react';
+} from '@churrasco-ui/react';
 import { X } from 'phosphor-react';
 
 export default {

@@ -8,7 +8,7 @@ import {
   ModalProvider,
   ModalTrigger,
   Text,
-} from '@sapron-ui/react';
+} from '@churrasco-ui/react';
 import { X } from 'phosphor-react';
 
 export default {
