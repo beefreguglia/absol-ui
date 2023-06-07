@@ -19,7 +19,7 @@ const config = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
-      config.base = '/churrasco-ui/'
+      config.base = '/churrasco-ui'
     }
     return config
   }
