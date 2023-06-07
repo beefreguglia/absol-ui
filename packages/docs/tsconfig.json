@@ -1,0 +1,4 @@
+{
+  "extends": "@sapron-ui/ts-config/react.json",
+  "include": ["src"],
+}

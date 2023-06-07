@@ -1,0 +1,3 @@
+{
+  "extends": "@sapron-ui/eslint-config"
+}
