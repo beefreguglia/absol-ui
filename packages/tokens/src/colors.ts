@@ -89,6 +89,4 @@ export const colors = {
   yellow700: '#F57D00',
   yellow800: '#EF6D00',
   yellow900: '#E65200',
-
-  teste: '#FFF',
 } as const;
