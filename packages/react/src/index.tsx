@@ -6,4 +6,13 @@ export * from './components/Button';
 export * from './components/ScrollArea';
 export * from './components/Modal';
 export * from './components/Select';
-export * from './styles';
+export {
+  config,
+  createTheme,
+  css,
+  getCssText,
+  globalCss,
+  keyframes,
+  styled,
+  theme,
+} from './styles';
