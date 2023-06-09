@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 4.0.1
+
+### Patch Changes
+
+- remove file in json
+
 ## 4.0.0
 
 ### Major Changes

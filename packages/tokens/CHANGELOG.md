@@ -1,5 +1,11 @@
 # @churrasco-ui/tokens
 
+## 2.0.2
+
+### Patch Changes
+
+- remove file in json
+
 ## 2.0.1
 
 ### Patch Changes
