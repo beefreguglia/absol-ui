@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- remove files in json
+
+## 4.0.1
+
+### Patch Changes
+
 - remove file in json
 
 ## 4.0.0

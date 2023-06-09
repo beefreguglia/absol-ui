@@ -1,5 +1,11 @@
 # @churrasco-ui/eslint-config
 
+## 2.0.3
+
+### Patch Changes
+
+- remove files in json
+
 ## 2.0.2
 
 ### Patch Changes
