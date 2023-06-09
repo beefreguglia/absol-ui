@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 3.0.2
+
+### Patch Changes
+
+- Add files in json
+
 ## 3.0.1
 
 ### Patch Changes

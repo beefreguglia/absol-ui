@@ -1,11 +1,13 @@
 {
   "name": "@churrasco-ui/react",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["./dist"],
+  "files": [
+    "./dist"
+  ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
