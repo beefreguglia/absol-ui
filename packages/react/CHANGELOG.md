@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 4.0.3
+
+### Patch Changes
+
+- Add files and new structure
+
 ## 4.0.2
 
 ### Patch Changes
