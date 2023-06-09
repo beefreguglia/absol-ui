@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- 46e2f51: Fix files
+
 ## 3.0.2
 
 ### Patch Changes
