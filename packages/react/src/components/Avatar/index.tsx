@@ -7,7 +7,6 @@ export interface AvatarProps extends ComponentProps<typeof AvatarImage> {
 }
 
 export function Avatar({ size, ...imageProps }: AvatarProps) {
-  console.log('TESTE');
   return (
     <AvatarContainer size={size}>
       <AvatarImage {...imageProps} />

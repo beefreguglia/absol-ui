@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 3.0.1
+
+### Patch Changes
+
+- Remove console.log
+
 ## 3.0.0
 
 ### Major Changes
