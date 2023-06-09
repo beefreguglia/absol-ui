@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 4.0.2
+
+### Patch Changes
+
+- Add console.log
+
 ## 4.0.1
 
 ### Patch Changes
