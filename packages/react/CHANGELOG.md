@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 1.1.3
+
+### Patch Changes
+
+- New export
+
 ## 1.1.2
 
 ### Patch Changes
