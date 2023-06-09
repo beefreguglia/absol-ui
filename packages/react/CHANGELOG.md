@@ -1,5 +1,15 @@
 # @churrasco-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- 46e2f51: Fix files
+
+### Patch Changes
+
+- 9ca883a: Add new npm igonore
+
 ## 3.0.2
 
 ### Patch Changes

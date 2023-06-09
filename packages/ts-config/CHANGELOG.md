@@ -1,5 +1,11 @@
 # @churrasco-ui/ts-config
 
+## 2.0.1
+
+### Patch Changes
+
+- 9ca883a: Add new npm igonore
+
 ## 2.0.0
 
 ### Major Changes
