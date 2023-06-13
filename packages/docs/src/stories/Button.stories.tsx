@@ -1,16 +1,15 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, Button, ButtonProps } from '@churrasco-ui/react';
+import { BoxContent, BoxRoot, Button, ButtonProps } from '@churrasco-ui/react';
 
 export default {
   title: 'Form/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
-    size: {
-      options: ['sm', 'md'],
-      defaultValue: 'md',
-      description: 'Tamanhos utilizados para alterar o tamanho do botão.',
-      control: { type: 'select' },
+    disabled: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+      description: 'Desabilita o botão',
     },
     variant: {
       control: { type: 'select' },
@@ -18,19 +17,13 @@ export default {
       description: 'Variantes do botão',
       defaultValue: 'primary',
     },
-    isFull: {
-      control: { type: 'boolean' },
-      defaultValue: false,
-      description: 'Ocupar todo tamanho disponível em tela',
-    },
     children: {
       description: 'Texto do botão',
     },
   },
   args: {
     children: 'Enviar',
-    size: 'md',
-    isFull: false,
+    disabled: false,
     variant: 'primary',
   },
   parameters: {
@@ -39,17 +32,17 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box
-          css={{
-            width: '50vw',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '$gray100',
-          }}
-        >
-          {Story()}
-        </Box>
+        <BoxRoot>
+          <BoxContent
+            css={{
+              backgroundColor: '$blue50',
+              padding: '$4',
+              minWidth: '200px',
+            }}
+          >
+            {Story()}
+          </BoxContent>
+        </BoxRoot>
       );
     },
   ],
@@ -57,20 +50,14 @@ export default {
 
 export const Primary: StoryObj<ButtonProps> = {};
 
+export const PrimaryDisabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
+  },
+};
+
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
     variant: 'secondary',
-  },
-};
-
-export const Small: StoryObj<ButtonProps> = {
-  args: {
-    size: 'sm',
-  },
-};
-
-export const Full: StoryObj<ButtonProps> = {
-  args: {
-    isFull: true,
   },
 };

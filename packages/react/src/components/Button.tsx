@@ -4,7 +4,6 @@ import { styled } from '../styles';
 export const Button = styled('button', {
   all: 'unset',
   borderRadius: '$md',
-  fontSize: '$sm',
   fontWeight: '$bold',
   fontFamily: '$default',
   textAlign: 'center',
@@ -15,8 +14,7 @@ export const Button = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '$2',
-  padding: '0 $4',
-  boxShadow: '0 3px 5px 1px #0D4BD0',
+  padding: '$3 $4',
 
   cursor: 'pointer',
 
@@ -25,8 +23,9 @@ export const Button = styled('button', {
     height: '$4',
   },
 
-  ':disabled': {
+  '&:disabled': {
     cursor: 'not-allowed',
+    backgroundColor: '$blue100',
   },
 
   variants: {
@@ -36,7 +35,8 @@ export const Button = styled('button', {
         color: '$white',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '#2B6CB0',
+          backgroundColor: '$blue400',
+          transition: 'all 300ms',
         },
 
         ':disabled': {
@@ -44,16 +44,10 @@ export const Button = styled('button', {
         },
       },
       secondary: {
-        color: '$blue500',
-        border: '2px solid $blue500',
-      },
-    },
-    size: {
-      sm: {
-        height: 32,
-      },
-      md: {
-        height: 40,
+        padding: 'calc($3 - 2px) $4',
+        color: '$darkBlue900',
+        backgroundColor: '$white',
+        border: '2px solid $darkBlue900',
       },
     },
     isFull: {
@@ -65,7 +59,6 @@ export const Button = styled('button', {
 
   defaultVariants: {
     variant: 'primary',
-    size: 'md',
     isFull: false,
   },
 });
@@ -73,7 +66,6 @@ export const Button = styled('button', {
 export interface ButtonProps extends ComponentProps<typeof Button> {
   as?: ElementType;
   variant?: 'primary' | 'secondary';
-  size?: 'sm' | 'md';
   isFull?: boolean;
 }
 
