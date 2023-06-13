@@ -1,5 +1,11 @@
 # @churrasco-ui/react
 
+## 5.0.0
+
+### Major Changes
+
+- New components and update tokens
+
 ## 4.0.3
 
 ### Patch Changes

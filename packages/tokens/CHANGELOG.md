@@ -1,5 +1,11 @@
 # @churrasco-ui/tokens
 
+## 2.0.4
+
+### Patch Changes
+
+- New components and update tokens
+
 ## 2.0.3
 
 ### Patch Changes
