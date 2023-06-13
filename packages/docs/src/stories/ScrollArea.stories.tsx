@@ -1,5 +1,11 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, ScrollArea, ScrollAreaProps, Text } from '@churrasco-ui/react';
+import {
+  BoxRoot,
+  BoxContent,
+  ScrollArea,
+  ScrollAreaProps,
+  Text,
+} from '@churrasco-ui/react';
 
 export default {
   title: 'Navigation/ScrollArea',
@@ -7,7 +13,7 @@ export default {
   tags: ['autodocs'],
   args: {
     children: (
-      <Text size="lg" css={{ width: '500px', padding: '$4' }}>
+      <Text size="lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
         mollitia quisquam amet blanditiis eligendi harum officia, dolorum
         perspiciatis quia cupiditate quam ducimus. Nihil fuga aut necessitatibus
@@ -37,22 +43,110 @@ export default {
 
     layout: 'centered',
   },
+} as Meta<ScrollAreaProps>;
+
+export const Vertical: StoryObj<ScrollAreaProps> = {
   decorators: [
     (Story) => {
       return (
-        <Box
-          css={{
-            width: '500px',
-            height: '200px',
-            display: 'flex',
-            backgroundColor: '$gray100',
-          }}
-        >
-          {Story()}
-        </Box>
+        <BoxRoot hasShadow>
+          <BoxContent
+            css={{
+              backgroundColor: '$blue50',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '$4',
+              flexDirection: 'row',
+            }}
+          >
+            <BoxRoot>
+              <BoxContent css={{ maxWidth: '250px', height: '150px' }}>
+                {Story()}
+              </BoxContent>
+            </BoxRoot>
+          </BoxContent>
+        </BoxRoot>
       );
     },
   ],
-} as Meta<ScrollAreaProps>;
+};
 
-export const Primary: StoryObj<ScrollAreaProps> = {};
+export const Horizontal: StoryObj<ScrollAreaProps> = {
+  decorators: [
+    (Story) => {
+      return (
+        <BoxRoot hasShadow>
+          <BoxContent
+            css={{
+              backgroundColor: '$blue50',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '$4',
+              flexDirection: 'row',
+            }}
+          >
+            <BoxRoot>
+              <BoxContent css={{ maxWidth: '250px', height: '150px' }}>
+                {Story()}
+              </BoxContent>
+            </BoxRoot>
+          </BoxContent>
+        </BoxRoot>
+      );
+    },
+  ],
+  args: {
+    children: (
+      <Text size="lg" css={{ minWidth: '500px' }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        mollitia quisquam amet blanditiis eligendi harum officia, dolorum
+        perspiciatis quia cupiditate quam ducimus. Nihil fuga aut necessitatibus
+        minima enim
+      </Text>
+    ),
+  },
+};
+
+export const Both: StoryObj<ScrollAreaProps> = {
+  decorators: [
+    (Story) => {
+      return (
+        <BoxRoot hasShadow>
+          <BoxContent
+            css={{
+              backgroundColor: '$blue50',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '$4',
+              flexDirection: 'row',
+            }}
+          >
+            <BoxRoot>
+              <BoxContent css={{ maxWidth: '250px', height: '150px' }}>
+                {Story()}
+              </BoxContent>
+            </BoxRoot>
+          </BoxContent>
+        </BoxRoot>
+      );
+    },
+  ],
+  args: {
+    children: (
+      <Text size="lg" css={{ width: '500px' }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        mollitia quisquam amet blanditiis eligendi harum officia, dolorum
+        perspiciatis quia cupiditate quam ducimus. Nihil fuga aut necessitatibus
+        minima enim
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        mollitia quisquam amet blanditiis eligendi harum officia, dolorum
+        perspiciatis quia cupiditate quam ducimus. Nihil fuga aut necessitatibus
+        minima enim dolorum architecto?
+      </Text>
+    ),
+  },
+};

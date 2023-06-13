@@ -18,12 +18,12 @@ export const Scrollbar = styled(ScrollArea.Scrollbar, {
   userSelect: 'none',
   touchAction: 'none',
   padding: '2px',
-  backgroundColor: '$white',
+  backgroundColor: '$gray50',
   transition: 'background 160ms ease-out',
   borderRadius: '$xs',
 
   '&:hover': {
-    backgroundColor: '$gray300',
+    backgroundColor: '$gray100',
   },
 
   '&[data-orientation="vertical"]': {
@@ -38,7 +38,7 @@ export const Scrollbar = styled(ScrollArea.Scrollbar, {
 
 export const ScrollbarThumb = styled(ScrollArea.Thumb, {
   flex: 1,
-  backgroundColor: '$blue500',
+  backgroundColor: '$gray200',
   borderRadius: '$md',
   position: 'relative',
 
@@ -56,5 +56,5 @@ export const ScrollbarThumb = styled(ScrollArea.Thumb, {
 });
 
 export const ScrollbarCorner = styled(ScrollArea.Corner, {
-  backgroundColor: '$gray300',
+  backgroundColor: '$gray200',
 });
