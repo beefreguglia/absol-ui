@@ -1,18 +1,43 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, Select, SelectOption, SelectProps } from '@churrasco-ui/react';
+import {
+  BoxContent,
+  BoxRoot,
+  SelectRoot,
+  SelectOption,
+  SelectRootProps,
+  SelectTrigger,
+  SelectContent,
+} from '@churrasco-ui/react';
 
 export default {
   title: 'Form/Select/Select',
-  component: Select,
+  component: SelectRoot,
   tags: ['autodocs'],
   args: {
     children: (
       <>
-        <SelectOption value="option1" name="option1" />
-        <SelectOption value="option2" name="option2" />
-        <SelectOption value="option3" name="option3" />
-        <SelectOption value="option4" name="option4" />
-        <SelectOption value="option5" name="option5" />
+        <SelectTrigger ariaLabel="options" placeholder="Select option" />
+        <SelectContent>
+          <SelectOption
+            options={[
+              { value: 'option1', name: 'option 1' },
+              { value: 'option2', name: 'option 2' },
+              { value: 'option3', name: 'option 3' },
+              { value: 'option4', name: 'option 4' },
+              { value: 'option5', name: 'option 5' },
+            ]}
+          />
+          <SelectOption
+            options={[
+              { value: 'option6', name: 'option 6' },
+              { value: 'option7', name: 'option 7' },
+              { value: 'option8', name: 'option 8' },
+              { value: 'option9', name: 'option 9' },
+              { value: 'option10', name: 'option 10' },
+            ]}
+            categoryLabel="Category 2"
+          />
+        </SelectContent>
       </>
     ),
     ariaLabel: 'options',
@@ -38,21 +63,24 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box
-          css={{
-            width: '50vw',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '$gray100',
-            padding: '$4',
-          }}
-        >
-          {Story()}
-        </Box>
+        <BoxRoot>
+          <BoxContent
+            css={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: '$blue50',
+              padding: '$4',
+            }}
+          >
+            <BoxRoot hasShadow>
+              <BoxContent>{Story()}</BoxContent>
+            </BoxRoot>
+          </BoxContent>
+        </BoxRoot>
       );
     },
   ],
-} as Meta<SelectProps>;
+} as Meta<SelectRootProps>;
 
-export const Primary: StoryObj<SelectProps> = {};
+export const Primary: StoryObj<SelectRootProps> = {};
