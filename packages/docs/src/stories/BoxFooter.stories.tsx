@@ -3,36 +3,26 @@ import { StoryObj, Meta } from '@storybook/react';
 import {
   BoxRoot,
   BoxContent,
-  BoxHeader,
-  BoxHeaderProps,
+  BoxFooter,
+  BoxFooterProps,
   Text,
+  Button,
   ScrollArea,
 } from '@churrasco-ui/react';
 
 export default {
-  title: 'Surfaces/Box/BoxHeader',
-  component: BoxHeader,
+  title: 'Surfaces/Box/BoxFooter',
+  component: BoxFooter,
   tags: ['autodocs'],
   args: {
-    title: 'Lorem',
-    description: 'Lorem ipsum dolor sit amet consectetur adipis icing elit.',
     children: (
-      <BoxRoot>
-        <BoxContent
-          css={{ backgroundColor: '$neutralGray200', marginTop: '$3' }}
-        >
-          <Text>Elemento Filho do header</Text>
-        </BoxContent>
-      </BoxRoot>
+      <>
+        <Button variant="secondary">Cancelar</Button>
+        <Button>Próximo</Button>
+      </>
     ),
   },
   argTypes: {
-    description: {
-      description: 'Descrição do conteúdo',
-    },
-    title: {
-      description: 'Título do card',
-    },
     children: {
       control: {
         type: null,
@@ -43,7 +33,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        story: 'Componente caixa com header',
+        story: 'Componente caixa com Footer',
       },
     },
 
@@ -62,16 +52,10 @@ export default {
               padding: '$4',
             }}
           >
-            <BoxRoot hasShadow>
-              {Story()}
-              <BoxContent contents="header">
+            <BoxRoot>
+              <BoxContent contents="footer">
                 <ScrollArea>
-                  <Text
-                    css={{
-                      maxWidth: '98%',
-                      maxHeight: '200px',
-                    }}
-                  >
+                  <Text css={{ width: '98%', maxHeight: '200px' }}>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Aut molestiae facere voluptatem animi quasi nihil quidem
                     accusantium quod illum dicta sit voluptates illo sint,
@@ -94,12 +78,13 @@ export default {
                   </Text>
                 </ScrollArea>
               </BoxContent>
+              {Story()}
             </BoxRoot>
           </BoxContent>
         </BoxRoot>
       );
     },
   ],
-} as Meta<BoxHeaderProps>;
+} as Meta<BoxFooterProps>;
 
-export const Primary: StoryObj<BoxHeaderProps> = {};
+export const Primary: StoryObj<BoxFooterProps> = {};

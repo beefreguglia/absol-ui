@@ -1,37 +1,50 @@
-import { ComponentProps, ElementType } from 'react';
+import { ComponentProps, ElementType, ReactNode } from 'react';
 import {
   BoxContainer,
   BoxContentContainer,
+  BoxFooterContainer,
   BoxHeaderContainer,
 } from './styles';
 import { Heading } from '../Heading';
 import { Text } from '../Text';
-import { ScrollArea } from '../ScrollArea';
 
-export interface BoxProps extends ComponentProps<typeof BoxContainer> {
+export interface BoxRootProps extends ComponentProps<typeof BoxContainer> {
   as?: ElementType;
 }
 
-export function Box({ children, ...props }: BoxProps) {
-  return <BoxContainer {...props}>{children}</BoxContainer>;
+export function BoxRoot({
+  children,
+  hasShadow = false,
+  ...props
+}: BoxRootProps) {
+  return (
+    <BoxContainer hasShadow={hasShadow} {...props}>
+      {children}
+    </BoxContainer>
+  );
 }
 
-Box.displayName = 'Box';
+BoxRoot.displayName = 'Box';
 
 export interface BoxHeaderProps
   extends ComponentProps<typeof BoxHeaderContainer> {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   as?: ElementType;
+  children?: ReactNode;
 }
 
-export function BoxHeader({ title, description, ...props }: BoxHeaderProps) {
+export function BoxHeader({
+  title,
+  description,
+  children,
+  ...props
+}: BoxHeaderProps) {
   return (
     <BoxHeaderContainer {...props}>
-      <div>
-        <Heading>{title}</Heading>
-        <Text size="xs">{description}</Text>
-      </div>
+      {title && <Heading>{title}</Heading>}
+      {description && <Text size="xs">{description}</Text>}
+      {children}
     </BoxHeaderContainer>
   );
 }
@@ -41,13 +54,25 @@ BoxHeader.displayName = 'BoxHeader';
 export interface BoxContentProps
   extends ComponentProps<typeof BoxContentContainer> {
   as?: ElementType;
-  hasActions?: boolean;
 }
 
-export function BoxContent({ children, ...props }: BoxContentProps) {
+export function BoxContent({ children, contents, ...props }: BoxContentProps) {
   return (
-    <ScrollArea>
-      <BoxContentContainer {...props}>{children}</BoxContentContainer>
-    </ScrollArea>
+    <BoxContentContainer contents={contents} {...props}>
+      {children}
+    </BoxContentContainer>
   );
 }
+
+BoxContent.displayName = 'BoxContent';
+
+export interface BoxFooterProps
+  extends ComponentProps<typeof BoxHeaderContainer> {
+  as?: ElementType;
+  children?: ReactNode;
+}
+export function BoxFooter({ children, ...props }: BoxFooterProps) {
+  return <BoxFooterContainer {...props}>{children}</BoxFooterContainer>;
+}
+
+BoxFooter.displayName = 'BoxFooter';
