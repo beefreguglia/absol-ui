@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Avatar, AvatarProps, Box } from '@churrasco-ui/react';
+import { Avatar, AvatarProps, BoxContent, BoxRoot } from '@churrasco-ui/react';
 
 export default {
   title: 'Data Display/Avatar',
@@ -31,13 +31,16 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box
-          css={{
-            backgroundColor: '$gray300',
-          }}
-        >
-          {Story()}
-        </Box>
+        <BoxRoot hasShadow>
+          <BoxContent
+            css={{
+              backgroundColor: '$blue50',
+              padding: '$4',
+            }}
+          >
+            {Story()}
+          </BoxContent>
+        </BoxRoot>
       );
     },
   ],
