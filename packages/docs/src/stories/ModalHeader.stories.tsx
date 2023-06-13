@@ -1,6 +1,6 @@
 import { StoryObj, Meta } from '@storybook/react';
 import {
-  Box,
+  BoxRoot,
   Button,
   Modal,
   ModalHeader,
@@ -76,7 +76,7 @@ export const Primary: StoryObj<ModalHeaderProps> = {
           </ModalTrigger>
           <Modal size="full">
             {Story()}
-            <Box css={{ padding: '$4', height: '100%' }}>
+            <BoxRoot css={{ padding: '$4', height: '100%' }}>
               <Text>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 molestiae facere voluptatem animi quasi nihil quidem accusantium
@@ -94,7 +94,7 @@ export const Primary: StoryObj<ModalHeaderProps> = {
                 quod illum dicta sit voluptates illo sint, inventore asperiores
                 minima nemo cupiditate reiciendis.
               </Text>
-            </Box>
+            </BoxRoot>
           </Modal>
         </ModalProvider>
       );
@@ -116,7 +116,7 @@ export const LeftModal: StoryObj<ModalHeaderProps> = {
           </ModalTrigger>
           <Modal position="left">
             {Story()}
-            <Box css={{ padding: '$4', height: '100%' }}>
+            <BoxRoot css={{ padding: '$4', height: '100%' }}>
               <Text>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 molestiae facere voluptatem animi quasi nihil quidem accusantium
@@ -134,7 +134,7 @@ export const LeftModal: StoryObj<ModalHeaderProps> = {
                 quod illum dicta sit voluptates illo sint, inventore asperiores
                 minima nemo cupiditate reiciendis.
               </Text>
-            </Box>
+            </BoxRoot>
           </Modal>
         </ModalProvider>
       );
@@ -156,7 +156,7 @@ export const RightModal: StoryObj<ModalHeaderProps> = {
           </ModalTrigger>
           <Modal position="right">
             {Story()}
-            <Box css={{ padding: '$4', height: '100%' }}>
+            <BoxRoot css={{ padding: '$4', height: '100%' }}>
               <Text>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 molestiae facere voluptatem animi quasi nihil quidem accusantium
@@ -174,7 +174,7 @@ export const RightModal: StoryObj<ModalHeaderProps> = {
                 quod illum dicta sit voluptates illo sint, inventore asperiores
                 minima nemo cupiditate reiciendis.
               </Text>
-            </Box>
+            </BoxRoot>
           </Modal>
         </ModalProvider>
       );

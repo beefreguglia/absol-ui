@@ -21,7 +21,6 @@ export const ModalHeaderContainer = styled('header', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'flex-start',
-  background: '$gray300',
   padding: '$8 $8 $4 $8',
   borderRadius: '$md $md 0 0',
   position: 'relative',
@@ -107,7 +106,7 @@ export const CloseContentContainer = styled('div', {
     },
     position: {
       left: {
-        background: '$gray500',
+        background: '$gray100',
         padding: '$4',
         position: 'absolute',
         top: '1rem',
@@ -116,7 +115,7 @@ export const CloseContentContainer = styled('div', {
       },
       center: {},
       right: {
-        background: '$gray500',
+        background: '$gray100',
         padding: '$4',
         position: 'absolute',
         top: '1rem',
@@ -132,9 +131,8 @@ export const CloseContentContainer = styled('div', {
 
 export const ModalActionsContainer = styled('footer', {
   display: 'flex',
-  padding: '$8',
+  padding: '$6',
   alignItems: 'center',
-  backgroundColor: '$gray300',
   gap: '$4',
   borderRadius: '0 0 $md $md',
   variants: {

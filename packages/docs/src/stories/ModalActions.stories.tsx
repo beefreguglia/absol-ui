@@ -1,6 +1,6 @@
 import { StoryObj, Meta } from '@storybook/react';
 import {
-  Box,
+  BoxRoot,
   Button,
   Modal,
   ModalActions,
@@ -58,7 +58,7 @@ export const Primary: StoryObj<ModalActionsProps> = {
             <Button>Abrir Modal</Button>
           </ModalTrigger>
           <Modal size="full">
-            <Box css={{ padding: '$4', height: '100%' }}>
+            <BoxRoot css={{ padding: '$4', height: '100%' }}>
               <Text>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 molestiae facere voluptatem animi quasi nihil quidem accusantium
@@ -76,7 +76,7 @@ export const Primary: StoryObj<ModalActionsProps> = {
                 quod illum dicta sit voluptates illo sint, inventore asperiores
                 minima nemo cupiditate reiciendis.
               </Text>
-            </Box>
+            </BoxRoot>
             {Story()}
           </Modal>
         </ModalProvider>
@@ -94,7 +94,7 @@ export const LeftModal: StoryObj<ModalActionsProps> = {
             <Button>Abrir Modal</Button>
           </ModalTrigger>
           <Modal position="left" size="md">
-            <Box css={{ padding: '$4', height: '100%' }}>
+            <BoxRoot css={{ padding: '$4', height: '100%' }}>
               <Text>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 molestiae facere voluptatem animi quasi nihil quidem accusantium
@@ -112,7 +112,7 @@ export const LeftModal: StoryObj<ModalActionsProps> = {
                 quod illum dicta sit voluptates illo sint, inventore asperiores
                 minima nemo cupiditate reiciendis.
               </Text>
-            </Box>
+            </BoxRoot>
             {Story()}
           </Modal>
         </ModalProvider>
@@ -130,7 +130,7 @@ export const RightModal: StoryObj<ModalActionsProps> = {
             <Button>Abrir Modal</Button>
           </ModalTrigger>
           <Modal position="right" size="md">
-            <Box css={{ padding: '$4', height: '100%' }}>
+            <BoxRoot css={{ padding: '$4', height: '100%' }}>
               <Text>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                 molestiae facere voluptatem animi quasi nihil quidem accusantium
@@ -148,7 +148,7 @@ export const RightModal: StoryObj<ModalActionsProps> = {
                 quod illum dicta sit voluptates illo sint, inventore asperiores
                 minima nemo cupiditate reiciendis.
               </Text>
-            </Box>
+            </BoxRoot>
             {Story()}
           </Modal>
         </ModalProvider>

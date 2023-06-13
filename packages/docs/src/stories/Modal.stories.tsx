@@ -1,6 +1,7 @@
 import { StoryObj, Meta } from '@storybook/react';
 import {
-  Box,
+  BoxContent,
+  BoxRoot,
   Button,
   Modal,
   ModalProps,
@@ -15,16 +16,19 @@ export default {
   tags: ['autodocs'],
   args: {
     children: (
-      <Box css={{ padding: '$4', height: '100%' }}>
-        <Text>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-          molestiae facere voluptatem animi quasi nihil quidem accusantium quod
-          illum dicta sit voluptates illo sint, inventore asperiores minima nemo
-          cupiditate reiciendis. Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Aut molestiae facere voluptatem animi quasi nihil
-          quidem accusantium quod illum dicta sit voluptates illo sint,
-        </Text>
-      </Box>
+      <BoxRoot >
+        <BoxContent css={{ padding: '$4', height: '100%' }}>
+          <Text>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+            molestiae facere voluptatem animi quasi nihil quidem accusantium
+            quod illum dicta sit voluptates illo sint, inventore asperiores
+            minima nemo cupiditate reiciendis. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Aut molestiae facere voluptatem animi
+            quasi nihil quidem accusantium quod illum dicta sit voluptates illo
+            sint,
+          </Text>
+        </BoxContent>
+      </BoxRoot>
     ),
     size: 'sm',
   },
