@@ -11,7 +11,7 @@ export default {
       description: 'Texto utilizado como exemplo',
     },
     size: {
-      options: ['sm', 'md', 'lg', '2xl', '3xl', '4xl', '5xl', '6xl'],
+      options: ['sm', 'md', 'lg'],
       defaultValue: 'md',
       description: 'Tamanhos utilizados para os cabeçalhos.',
       control: { type: 'select' },

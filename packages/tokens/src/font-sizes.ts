@@ -1,8 +1,8 @@
 export const fontSizes = {
-  mini: '0.625rem',
-  pp: '0.75rem',
-  p: '0.875rem',
-  base: '1rem',
-  g: '1.375rem',
-  xg: '2rem',
+  xxs: '0.625rem',
+  xs: '0.75rem',
+  sm: '0.875rem',
+  md: '1rem',
+  lg: '1.375rem',
+  '2xl': '2rem',
 } as const;
