@@ -1,5 +1,11 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { BoxRoot, BoxContent, BoxRootProps, Text } from '@churrasco-ui/react';
+import {
+  BoxRoot,
+  BoxContent,
+  BoxRootProps,
+  Text,
+  ScrollArea,
+} from '@churrasco-ui/react';
 
 export default {
   title: 'Surfaces/Box/Box',
@@ -62,7 +68,7 @@ export default {
               backgroundColor: '$blue50',
             }}
           >
-            {Story()}
+            <ScrollArea>{Story()}</ScrollArea>
           </BoxContent>
         </BoxRoot>
       );
