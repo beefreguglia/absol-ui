@@ -8,6 +8,7 @@ export const SelectTriggerContainer = styled(Select.Trigger, {
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  boxSizing: 'border-box',
   borderRadius: '$sm',
   padding: '$3 $4',
   gap: '$2',
@@ -30,7 +31,7 @@ export const SelectTriggerContainer = styled(Select.Trigger, {
   },
 
   variants: {
-    haveError: {
+    hasError: {
       true: {
         border: '1px solid $red500',
         '&:focus': {

@@ -92,7 +92,7 @@ export const WithError: StoryObj<SelectRootProps> = {
         <SelectTrigger
           ariaLabel="options"
           placeholder="Select option"
-          error="Error message"
+          errorMessage="Error message"
         />
         <SelectContent>
           <SelectOption

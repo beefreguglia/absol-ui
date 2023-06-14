@@ -24,29 +24,29 @@ export function SelectRoot({ children, ...props }: SelectRootProps) {
 export interface SelectTriggerProps
   extends ComponentProps<typeof SelectTriggerContainer> {
   ariaLabel: string;
-  error?: string;
+  errorMessage?: string;
 }
 
 export function SelectTrigger({
   ariaLabel,
   placeholder,
-  error,
+  errorMessage,
   ...props
 }: SelectTriggerProps) {
-  const haveError = !!error;
+  const hasError = !!errorMessage;
 
   return (
     <>
-      <SelectTriggerContainer {...props} haveError={haveError}>
+      <SelectTriggerContainer {...props} hasError={hasError}>
         <SelectPrimitive.Value placeholder={placeholder} />
         <SelectPrimitive.Icon asChild>
           <CaretDown size={10} weight="fill" />
         </SelectPrimitive.Icon>
       </SelectTriggerContainer>
-      {haveError && (
+      {hasError && (
         <SelectErrorContainer>
           <Warning size={14} />
-          <Text size="sm">{error}</Text>
+          <Text size="sm">{errorMessage}</Text>
         </SelectErrorContainer>
       )}
     </>

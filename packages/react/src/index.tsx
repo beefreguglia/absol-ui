@@ -7,4 +7,5 @@ export * from './components/ScrollArea';
 export * from './components/Modal';
 export * from './components/Select';
 export * from './components/Checkbox';
+export * from './components/TextInput';
 export * from './styles';

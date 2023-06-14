@@ -43,7 +43,7 @@ export const Button = styled('button', {
         },
       },
       secondary: {
-        padding: 'calc($3 - 2px) $4',
+        padding: '$2 $4',
         color: '$darkBlue900',
         backgroundColor: '$white',
         border: '2px solid $darkBlue900',
