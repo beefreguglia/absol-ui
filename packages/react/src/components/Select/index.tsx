@@ -3,6 +3,7 @@ import { ComponentProps, ReactNode } from 'react';
 import {
   SelectContainer,
   SelectContentContainer,
+  SelectErrorContainer,
   SelectItemContainer,
   SelectScrollDownButton,
   SelectScrollUpButton,
@@ -10,7 +11,7 @@ import {
   SelectViewport,
   SelectedItemIndicator,
 } from './styles';
-import { CaretDown, CaretUp, Check } from 'phosphor-react';
+import { CaretDown, CaretUp, Check, Warning } from 'phosphor-react';
 import { Text } from '../Text';
 
 export interface SelectRootProps
@@ -23,16 +24,32 @@ export function SelectRoot({ children, ...props }: SelectRootProps) {
 export interface SelectTriggerProps
   extends ComponentProps<typeof SelectTriggerContainer> {
   ariaLabel: string;
+  error?: string;
 }
 
-export function SelectTrigger({ ariaLabel, placeholder }: SelectTriggerProps) {
+export function SelectTrigger({
+  ariaLabel,
+  placeholder,
+  error,
+  ...props
+}: SelectTriggerProps) {
+  const haveError = !!error;
+
   return (
-    <SelectTriggerContainer aria-label={ariaLabel}>
-      <SelectPrimitive.Value placeholder={placeholder} />
-      <SelectPrimitive.Icon asChild>
-        <CaretDown size={10} weight="fill" />
-      </SelectPrimitive.Icon>
-    </SelectTriggerContainer>
+    <>
+      <SelectTriggerContainer {...props} haveError={haveError}>
+        <SelectPrimitive.Value placeholder={placeholder} />
+        <SelectPrimitive.Icon asChild>
+          <CaretDown size={10} weight="fill" />
+        </SelectPrimitive.Icon>
+      </SelectTriggerContainer>
+      {haveError && (
+        <SelectErrorContainer>
+          <Warning size={14} />
+          <Text size="sm">{error}</Text>
+        </SelectErrorContainer>
+      )}
+    </>
   );
 }
 

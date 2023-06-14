@@ -84,3 +84,38 @@ export default {
 } as Meta<SelectRootProps>;
 
 export const Primary: StoryObj<SelectRootProps> = {};
+
+export const WithError: StoryObj<SelectRootProps> = {
+  args: {
+    children: (
+      <>
+        <SelectTrigger
+          ariaLabel="options"
+          placeholder="Select option"
+          error="Error message"
+        />
+        <SelectContent>
+          <SelectOption
+            options={[
+              { value: 'option1', name: 'option 1' },
+              { value: 'option2', name: 'option 2' },
+              { value: 'option3', name: 'option 3' },
+              { value: 'option4', name: 'option 4' },
+              { value: 'option5', name: 'option 5' },
+            ]}
+          />
+          <SelectOption
+            options={[
+              { value: 'option6', name: 'option 6' },
+              { value: 'option7', name: 'option 7' },
+              { value: 'option8', name: 'option 8' },
+              { value: 'option9', name: 'option 9' },
+              { value: 'option10', name: 'option 10' },
+            ]}
+            categoryLabel="Category 2"
+          />
+        </SelectContent>
+      </>
+    ),
+  },
+};

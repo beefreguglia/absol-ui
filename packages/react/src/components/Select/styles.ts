@@ -1,9 +1,8 @@
 import * as Select from '@radix-ui/react-select';
 import { styled } from '../../styles';
+import { Text } from '../Text';
 
-export const SelectContainer = styled(Select.Root, {
-  backgroundColor: 'red',
-});
+export const SelectContainer = styled(Select.Root, {});
 
 export const SelectTriggerContainer = styled(Select.Trigger, {
   display: 'inline-flex',
@@ -28,6 +27,23 @@ export const SelectTriggerContainer = styled(Select.Trigger, {
   '&:hover': {
     border: '1px solid $green300',
     backgroundColor: '$neutralGray50',
+  },
+
+  variants: {
+    haveError: {
+      true: {
+        border: '1px solid $red500',
+        '&:focus': {
+          border: '1px solid $red500',
+          boxShadow: '0 0 0 1px $red500',
+          outline: 0,
+        },
+
+        '&:hover': {
+          border: '1px solid $red500',
+        },
+      },
+    },
   },
 });
 
@@ -101,5 +117,22 @@ export const SelectScrollDownButton = styled(Select.ScrollDownButton, {
   '&:hover': {
     transition: 'background 100ms ease-in-out',
     backgroundColor: '$gray50',
+  },
+});
+
+export const SelectErrorContainer = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+
+  gap: '$2',
+  marginTop: '$1',
+  padding: '0 $2',
+
+  svg: {
+    color: '$red500',
+  },
+
+  [`${Text}`]: {
+    color: '$red500',
   },
 });
