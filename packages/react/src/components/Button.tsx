@@ -25,7 +25,6 @@ export const Button = styled('button', {
 
   '&:disabled': {
     cursor: 'not-allowed',
-    backgroundColor: '$blue100',
   },
 
   variants: {
@@ -39,7 +38,7 @@ export const Button = styled('button', {
           transition: 'all 300ms',
         },
 
-        ':disabled': {
+        '&:disabled': {
           backgroundColor: '$blue300',
         },
       },
