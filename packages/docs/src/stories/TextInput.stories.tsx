@@ -4,7 +4,7 @@ import {
   BoxRoot,
   TextInput,
   TextInputProps,
-} from '@churrasco-ui/react';
+} from '@absol-ui/react';
 
 export default {
   title: 'Form/TextInput',

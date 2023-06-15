@@ -1,5 +1,5 @@
 {
-  "name": "@churrasco-ui/react",
+  "name": "@absol-ui/react",
   "version": "5.2.0",
   "description": "",
   "main": "./dist/index.js",
@@ -17,9 +17,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@churrasco-ui/eslint-config": "*",
-    "@churrasco-ui/tokens": "*",
-    "@churrasco-ui/ts-config": "*",
+    "@absol-ui/eslint-config": "*",
+    "@absol-ui/tokens": "*",
+    "@absol-ui/ts-config": "*",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "react": "^18.2.0",

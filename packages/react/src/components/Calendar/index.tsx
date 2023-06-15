@@ -65,13 +65,16 @@ export function Calendar({
   const currentMonth = currentDate.format('MMMM');
   const currentYear = currentDate.format('YYYY');
 
-  const calendarWeeks = useMemo(() => {
-    const daysInMonthArray = Array.from({
+  function getDaysInMonth() {
+    return Array.from({
       length: currentDate.daysInMonth(),
     }).map((_, index) => {
       return currentDate.set('date', index + 1);
     });
+  }
 
+  const calendarWeeks = useMemo(() => {
+    const daysInMonthArray = getDaysInMonth();
     const firstWeekDay = currentDate.get('day');
 
     const previousMonthFillArray = Array.from({

@@ -7,7 +7,7 @@ import {
   BoxHeaderProps,
   Text,
   ScrollArea,
-} from '@churrasco-ui/react';
+} from '@absol-ui/react';
 
 export default {
   title: 'Surfaces/Box/BoxHeader',

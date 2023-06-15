@@ -1,6 +1,6 @@
 {
-  "name": "@churrasco-ui/tokens",
-  "version": "2.0.4",
+  "name": "@absol-ui/tokens",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@churrasco-ui/ts-config": "*",
-    "@churrasco-ui/eslint-config": "*",
+    "@absol-ui/ts-config": "*",
+    "@absol-ui/eslint-config": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   }

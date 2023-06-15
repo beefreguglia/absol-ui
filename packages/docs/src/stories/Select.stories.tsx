@@ -7,7 +7,7 @@ import {
   SelectRootProps,
   SelectTrigger,
   SelectContent,
-} from '@churrasco-ui/react';
+} from '@absol-ui/react';
 
 export default {
   title: 'Form/Select/Select',

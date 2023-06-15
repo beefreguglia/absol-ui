@@ -10,4 +10,5 @@ export * from './components/Checkbox';
 export * from './components/TextInput';
 export * from './components/Calendar';
 export * from './components/DatePicker';
+export * from './components/AutoComplete';
 export * from './styles';

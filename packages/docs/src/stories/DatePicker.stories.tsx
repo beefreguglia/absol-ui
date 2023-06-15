@@ -4,7 +4,7 @@ import {
   BoxRoot,
   DatePicker,
   DatePickerProps,
-} from '@churrasco-ui/react';
+} from '@absol-ui/react';
 
 export default {
   title: 'Form/DatePicker',

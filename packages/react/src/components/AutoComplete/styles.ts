@@ -1,8 +1,7 @@
 import { styled } from '../../styles';
-import { Button } from '../Button';
 import { Text } from '../Text';
 
-export const DatePickerContainer = styled('div', {
+export const AutoCompleteContainer = styled('div', {
   backgroundColor: '$white',
   padding: '$2 $4',
   borderRadius: '$sm',
@@ -11,7 +10,6 @@ export const DatePickerContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  position: 'relative',
 
   svg: {
     cursor: 'pointer',
@@ -41,11 +39,6 @@ export const DatePickerContainer = styled('div', {
         },
       },
     },
-    isOpen: {
-      true: {
-        borderColor: '$green300',
-      },
-    },
   },
 
   '&:has(input:focus)': {
@@ -73,6 +66,7 @@ export const Input = styled('input', {
   '&::-webkit-calendar-picker-indicator': {
     display: 'none',
     '-webkit-appearance': 'none',
+    background: 'red',
   },
 
   '&:focus': {
@@ -88,7 +82,7 @@ export const Input = styled('input', {
   },
 });
 
-export const DatePickerErrorContainer = styled('div', {
+export const AutoCompleteErrorContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
 
@@ -104,17 +98,5 @@ export const DatePickerErrorContainer = styled('div', {
     minWidth: '14px',
     minHeight: '14px',
     color: '$red500',
-  },
-});
-
-export const ButtonsContainer = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-  padding: '$3 $6 $6',
-
-  [`& ${Button}`]: {
-    fontSize: '$xs',
-    borderRadius: '$md',
-    padding: '$2 $4',
   },
 });

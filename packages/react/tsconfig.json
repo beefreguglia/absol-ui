@@ -1,4 +1,4 @@
 {
-  "extends": "@churrasco-ui/ts-config/react.json",
+  "extends": "@absol-ui/ts-config/react.json",
   "include": ["src"],
 }

@@ -1,4 +1,4 @@
 {
-  "extends": "@churrasco-ui/ts-config/base.json",
+  "extends": "@absol-ui/ts-config/base.json",
   "include": ["src"],
 }

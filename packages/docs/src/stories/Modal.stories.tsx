@@ -8,7 +8,7 @@ import {
   ModalProvider,
   ModalTrigger,
   Text,
-} from '@churrasco-ui/react';
+} from '@absol-ui/react';
 
 export default {
   title: 'Overlay/Modal/Modal',

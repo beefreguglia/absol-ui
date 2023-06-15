@@ -1,6 +1,6 @@
 {
-  "name": "@churrasco-ui/ts-config",
-  "version": "2.0.3",
+  "name": "@absol-ui/ts-config",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true
 }

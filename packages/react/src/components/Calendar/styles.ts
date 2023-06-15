@@ -71,7 +71,7 @@ export const CalendarBody = styled('table', {
   },
 
   'tbody:before': {
-    content: '.',
+    content: '',
     lineHeight: '0.75rem',
     display: 'block',
     color: '$gray800',
@@ -88,7 +88,7 @@ export const CalendarDay = styled('button', {
   aspectRatio: '1 / 1',
   textAlign: 'center',
   cursor: 'pointer',
-  borderRadius: '$full',
+  borderRadius: '$sm',
   border: '1px solid $gray300',
   fontSize: '$xs',
   color: '$gray800',
@@ -119,7 +119,11 @@ export const CalendarDay = styled('button', {
     },
     isToday: {
       true: {
-        background: '$red500',
+        background: '$gray50',
+
+        '&:hover': {
+          background: '$darkBlue50',
+        },
       },
     },
   },

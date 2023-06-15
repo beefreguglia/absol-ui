@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Text, TextProps } from '@churrasco-ui/react';
+import { Text, TextProps } from '@absol-ui/react';
 
 export default {
   title: 'Typography/Text',

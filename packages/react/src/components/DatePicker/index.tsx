@@ -58,11 +58,13 @@ export function DatePicker({
             type="date"
             {...props}
           />
-          <CalendarBlank weight="bold" />
+          <Popover.Anchor asChild>
+            <CalendarBlank weight="bold" />
+          </Popover.Anchor>
         </DatePickerContainer>
       </Popover.Trigger>
       <Popover.Portal>
-        <Popover.Content asChild>
+        <Popover.Content side="left" asChild>
           <BoxRoot hasShadow>
             <BoxContent css={{ maxWidth: '300px', padding: 0 }}>
               <Calendar

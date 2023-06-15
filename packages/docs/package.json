@@ -1,5 +1,5 @@
 {
-  "name": "@churrasco-ui/docs",
+  "name": "@absol-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,10 +13,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@churrasco-ui/eslint-config": "*",
-    "@churrasco-ui/react": "*",
-    "@churrasco-ui/tokens": "*",
-    "@churrasco-ui/ts-config": "*",
+    "@absol-ui/eslint-config": "*",
+    "@absol-ui/react": "*",
+    "@absol-ui/tokens": "*",
+    "@absol-ui/ts-config": "*",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",

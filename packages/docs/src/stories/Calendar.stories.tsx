@@ -4,7 +4,7 @@ import {
   CalendarProps,
   BoxContent,
   BoxRoot,
-} from '@churrasco-ui/react';
+} from '@absol-ui/react';
 
 export default {
   title: 'Data Display/Calendar',
