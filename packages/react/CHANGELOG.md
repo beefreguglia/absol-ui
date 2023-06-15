@@ -1,5 +1,17 @@
 # @churrasco-ui/react
 
+## 5.2.0
+
+### Minor Changes
+
+- New Datepicker component
+
+## 5.1.0
+
+### Minor Changes
+
+- New Checkbox and textinput components
+
 ## 5.0.0
 
 ### Major Changes

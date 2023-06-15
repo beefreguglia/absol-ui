@@ -41,12 +41,14 @@ export function ModalTrigger({
 ModalTrigger.displayName = 'ModalTrigger';
 
 export interface ModalProps
-  extends ComponentProps<typeof ModalContentContainer> {}
+  extends ComponentProps<typeof ModalContentContainer> {
+  hasOverlay?: boolean;
+}
 
-export function Modal({ children, ...props }: ModalProps) {
+export function Modal({ children, hasOverlay = true, ...props }: ModalProps) {
   return (
     <ModalPortal>
-      <ModalOverlay />
+      <ModalOverlay hasOverlay={hasOverlay} />
       <ModalContentContainer {...props}>{children}</ModalContentContainer>
     </ModalPortal>
   );

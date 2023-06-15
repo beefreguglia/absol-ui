@@ -13,8 +13,18 @@ export const ModalOverlay = styled(Dialog.DialogOverlay, {
   height: '100vh',
   position: 'fixed',
   inset: 0,
-  backgroundColor: 'rgba(0, 0, 0, 0.7)',
   zIndex: '10',
+
+  variants: {
+    hasOverlay: {
+      true: {
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      },
+    },
+  },
+  defaultVariants: {
+    hasOverlay: 'true',
+  },
 });
 
 export const ModalHeaderContainer = styled('header', {

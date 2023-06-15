@@ -8,4 +8,6 @@ export * from './components/Modal';
 export * from './components/Select';
 export * from './components/Checkbox';
 export * from './components/TextInput';
+export * from './components/Calendar';
+export * from './components/DatePicker';
 export * from './styles';
