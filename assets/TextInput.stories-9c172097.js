@@ -1,0 +1,6 @@
+import{j as r}from"./jsx-runtime-0741ab7f.js";import{o as u,B as o,a as t}from"./index-e591a762.js";import"./index-902e4630.js";import"./_commonjsHelpers-725317a4.js";import"./extends-98964cd2.js";const y={title:"Form/TextInput",component:u,tags:["autodocs"],parameters:{docs:{description:{story:"Componente TextInput para utilizar no sistema"}},layout:"centered"},decorators:[d=>r.jsx(o,{children:r.jsx(t,{css:{display:"flex",alignItems:"center",justifyContent:"center",backgroundColor:"$blue50",padding:"$4"},children:r.jsx(o,{hasShadow:!0,children:r.jsx(t,{children:d()})})})})]},e={},s={args:{errorMessage:"Error message"}};var a,n,c;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:"{}",...(c=(n=e.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};var i,m,p;s.parameters={...s.parameters,docs:{...(i=s.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    errorMessage: 'Error message'
+  }
+}`,...(p=(m=s.parameters)==null?void 0:m.docs)==null?void 0:p.source}}};const E=["Primary","WithError"];export{e as Primary,s as WithError,E as __namedExportsOrder,y as default};
+//# sourceMappingURL=TextInput.stories-9c172097.js.map

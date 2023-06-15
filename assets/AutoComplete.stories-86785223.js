@@ -1,0 +1,6 @@
+import{j as r}from"./jsx-runtime-0741ab7f.js";import{A as u,B as s,a as t}from"./index-e591a762.js";import"./index-902e4630.js";import"./_commonjsHelpers-725317a4.js";import"./extends-98964cd2.js";const j={title:"Form/AutoComplete",component:u,tags:["autodocs"],parameters:{docs:{description:{story:"Componente AutoComplete para utilizar no sistema"}},layout:"centered"},decorators:[d=>r.jsx(s,{children:r.jsx(t,{css:{display:"flex",alignItems:"center",justifyContent:"center",backgroundColor:"$blue50",padding:"$4"},children:r.jsx(s,{hasShadow:!0,children:r.jsx(t,{children:d()})})})})]},e={},o={args:{errorMessage:"Error message"}};var a,n,m;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:"{}",...(m=(n=e.parameters)==null?void 0:n.docs)==null?void 0:m.source}}};var c,i,p;o.parameters={...o.parameters,docs:{...(c=o.parameters)==null?void 0:c.docs,source:{originalSource:`{
+  args: {
+    errorMessage: 'Error message'
+  }
+}`,...(p=(i=o.parameters)==null?void 0:i.docs)==null?void 0:p.source}}};const y=["Primary","WithError"];export{e as Primary,o as WithError,y as __namedExportsOrder,j as default};
+//# sourceMappingURL=AutoComplete.stories-86785223.js.map
